@@ -217,3 +217,16 @@ if __name__ == '__main__':
     clear_everything()
     # read = Read()
     # read.read_and_add_psql()
+
+
+
+# If i loose the docker
+"""
+CREATE TABLE pickups (object_id SERIAL, location_id INT, flower_id INT, unicorn_id INT, PRIMARY KEY(object_id),   CONSTRAINT fk_locatioon
+      FOREIGN KEY(location_id) 
+          REFERENCES location_id(location_id),CONSTRAINT fk_flower
+      FOREIGN KEY(flower_id) 
+          REFERENCES flower_id(flower_id),CONSTRAINT fk_unicorn
+      FOREIGN KEY(unicorn_id) 
+          REFERENCES unicorn_id(unicorn_id));
+"""
